@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+body {
+    background-image: url('/imagen/blob-scene-haikei.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.navbar {
+    overflow: hidden;
+    padding: 10px 10px;
+    max-width: 100%;
+    background-color: #ffeeee;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.cont {
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 10px 10px;
+    max-width: 100%;
+    background-color: #ffeeee;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5px;
+}
+.cont {
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave */
+}
+
+.cont:hover {
+    transform: scale(1.011); /* Escala el contenedor un 10% más grande */
+}
+
+
+
+/*News Cards*/
+
+.elem1 {
+    margin-top: 10px;
+    margin-right: 20px; /* Espacio a la derecha */
+    padding: 10px 20px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Borde difuminado */
+    background-color: #ffeeee;
+    border-radius: 0.5px;
+    float: left;
+    width: 45%;
+    text-decoration: none;
+}
+
+.elem2 {
+    margin-top: 10px;
+    margin-left: 20px; /* Espacio a la izquierda */
+    padding: 10px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Borde difuminado */
+    background-color: rgba(255, 238, 238, 1);
+    border-radius: 0.5px;
+    float: left;
+    width: 45%;
+}
+.news-cards {
+    padding: 20px;
+    margin: 40px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+.news-cards{
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave */
+}
+
+.news-cards:hover {
+    transform: scale(1.011); /* Escala el contenedor un 10% más grande */
+}
+
+
+/*formulario*/
+nav {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.form {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-title, .submenu-title {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer; /* Indica que el elemento es clickeable */
+}
+
+.sub-form {
+    list-style-type: none;
+    padding: 10px 20px ;
+    margin: 10px;
+    display: none; /* Oculta los submenús inicialmente */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(77, 61, 61, 0.3);
+}
+
+.sub-form2 {
+    list-style-type: none;
+    padding: 10px 20px ;
+    margin: 10px;
+    display: none; /* Oculta los submenús inicialmente */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding-left: 20px; /* Alinea los submenús secundarios con una sangría */
+}
+
+.sub-form2 > li {
+    padding: 5px;
+}
+
+.sub-form2 > li > a, .sub-form > li > .submenu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-form2 > li > a:hover,
+.sub-form > li > .submenu-title:hover {
+    background-color: #c03b3b;
+}
+
+.show {
+    display: block; /* Muestra el submenú cuando se añade la clase 'show' */
+}
